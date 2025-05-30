@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Video API</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    video {
+      display: block;
+      margin: 0 auto;
+      border: 3px solid #444;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    #controls {
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+      gap: 10px;
+    }
+
+    button {
+      padding: 8px 16px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007BFF;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    p {
+      text-align: center;
+      font-size: 18px;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>HTML5 Video Player</h1>
+
+  <!-- Video Element -->
+  <video id="myVideo" width="640" controls>
+    <source src="1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Control Buttons -->
+  <div id="controls">
+    <button id="playBtn">Play</button>
+    <button id="pauseBtn">Pause</button>
+    <button id="muteBtn">Mute</button>
+    <button id="jumpBtn">Jump to 10s</button>
+  </div>
+
+  <!-- Playback Time -->
+  <p>Current Time: <span id="currentTime">0</span> seconds</p>
+
+  <script>
+    const video = document.getElementById('myVideo');
+    const playBtn = document.getElementById('playBtn');
+    const pauseBtn = document.getElementById('pauseBtn');
+    const muteBtn = document.getElementById('muteBtn');
+    const jumpBtn = document.getElementById('jumpBtn');
+    const currentTimeDisplay = document.getElementById('currentTime');
+
+    playBtn.addEventListener('click', () => {
+      video.play();
+    });
+
+    pauseBtn.addEventListener('click', () => {
+      video.pause();
+    });
+
+    muteBtn.addEventListener('click', () => {
+      video.muted = !video.muted;
+      muteBtn.textContent = video.muted ? 'Unmute' : 'Mute';
+    });
+
+    video.ontimeupdate = () => {
+      currentTimeDisplay.textContent = Math.floor(video.currentTime);
+    };
+
+    jumpBtn.addEventListener('click', () => {
+      video.currentTime = 10;
+    });
+  </script>
+
+</body>
+</html>
