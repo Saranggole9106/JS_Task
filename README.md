@@ -1,4 +1,4 @@
-🧠 JavaScript Quiz
+<h1 align="center">🧠 <strong>JavaScript Quiz</strong></h1>
 
 Fill in the blanks to test your JavaScript knowledge:
 
