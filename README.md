@@ -49,7 +49,8 @@ Fill in the blanks to test your JavaScript knowledge:
 <h1 align="center">🧩 <strong>JavaScript Criss-Cross Puzzle</strong></h1>
 
 <p align="center">
-  <img src="![image](https://github.com/user-attachments/assets/1d26f370-ad3e-457e-881f-3530a9f3c601)
+  <img src="<img width="558" alt="1" src="https://github.com/user-attachments/assets/9f618aaa-4a11-4725-8635-0a7f5932270c" />
+
 " alt="JavaScript Criss-Cross Puzzle" width="500"/>
 </p>
 
