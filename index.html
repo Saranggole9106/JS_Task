@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Tasks - Exact Implementation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>JavaScript Tasks - Exact Implementation</h1>
+
+    <!-- Task 1 -->
+    <div class="task">
+        <h2>1. Greet Me</h2>
+        <p>Variable called `language` with "JavaScript", then console.log "I am learning JavaScript!"</p>
+        <button onclick="task1()">Run Task 1</button>
+        <div class="console" id="console1"></div>
+    </div>
+
+    <!-- Task 2 -->
+    <div class="task">
+        <h2>2. Create a Greeting Function</h2>
+        <p>Function `greet` that takes a name and returns "Hello, [name]!"</p>
+        <div class="input-group">
+            <input type="text" id="nameInput" placeholder="Enter your name">
+            <button onclick="task2()">Run Task 2</button>
+        </div>
+        <div class="console" id="console2"></div>
+    </div>
+
+    <!-- Task 3 -->
+    <div class="task">
+        <h2>3. Even or Odd</h2>
+        <p>Check if a number is even or odd and print "Even" or "Odd"</p>
+        <div class="input-group">
+            <input type="number" id="numberInput" placeholder="Enter a number">
+            <button onclick="task3()">Run Task 3</button>
+        </div>
+        <div class="console" id="console3"></div>
+    </div>
+
+    <!-- Task 4 -->
+    <div class="task">
+        <h2>4. Countdown Timer</h2>
+        <p>for loop printing numbers 5 to 1, then "Boom!"</p>
+        <div class="input-group">
+            <input type="number" id="countdownInput" placeholder="Enter starting number" min="1" max="10">
+            <button onclick="task4()">Run Task 4</button>
+        </div>
+        <div class="console" id="console4"></div>
+    </div>
+
+    <!-- Task 5 -->
+    <div class="task">
+        <h2>5. Print All Colors</h2>
+        <p>Array with 3 colors, loop to print each</p>
+        <div class="input-group">
+            <input type="text" id="colorInput" placeholder="Enter a color">
+            <button onclick="addColor()">Add Color</button>
+            <button onclick="task5()">Show Colors</button>
+        </div>
+        <div class="console" id="console5"></div>
+    </div>
+
+    <!-- Task 6 -->
+    <div class="task">
+        <h2>6. Button Click Alert</h2>
+        <p>HTML button that shows alert "You clicked me!"</p>
+        <button onclick="alert('You clicked me!')">Click Me</button>
+    </div>
+
+    <!-- Task 7 -->
+    <div class="task">
+        <h2>7. Change the Paragraph Text</h2>
+        <p>Button changes paragraph from "Original Text" to "Text Changed!"</p>
+        <p id="originalText">Original Text</p>
+        <button onclick="document.getElementById('originalText').textContent = 'Text Changed!'">Change Text</button>
+    </div>
+
+    <!-- Task 8 -->
+    <div class="task">
+        <h2>8. Generate a Random Number</h2>
+        <p>Print random whole number between 0 and 99</p>
+        <div class="input-group">
+            <input type="number" id="maxNumber" placeholder="Enter max number" min="1" value="100">
+            <button onclick="task8()">Run Task 8</button>
+        </div>
+        <div class="console" id="console8"></div>
+    </div>
+
+    <!-- Task 9 -->
+    <div class="task">
+        <h2>9. Simple Add Function</h2>
+        <p>Function `add` that takes two numbers and returns their sum</p>
+        <div class="input-group">
+            <input type="number" id="num1" placeholder="First number">
+            <input type="number" id="num2" placeholder="Second number">
+            <button onclick="task9()">Run Task 9</button>
+        </div>
+        <div class="console" id="console9"></div>
+    </div>
+
+    <!-- Task 10 -->
+    <div class="task">
+        <h2>10. Login Status</h2>
+        <p>If `isLoggedIn` is true, print "Welcome back!"</p>
+        <div class="input-group">
+            <label>
+                <input type="checkbox" id="isLoggedIn"> Logged In
+            </label>
+            <button onclick="task10()">Run Task 10</button>
+        </div>
+        <div class="console" id="console10"></div>
+    </div>
+
+    <!-- Task 11 -->
+    <div class="task">
+        <h2>11. String Length</h2>
+        <p>Store a word and print how many characters it has</p>
+        <div class="input-group">
+            <input type="text" id="wordInput" placeholder="Enter a word">
+            <button onclick="task11()">Run Task 11</button>
+        </div>
+        <div class="console" id="console11"></div>
+    </div>
+
+    <!-- Task 12 -->
+    <div class="task">
+        <h2>12. Add to Fruits Array</h2>
+        <p>Array with two fruits, add one more with .push()</p>
+        <div class="input-group">
+            <input type="text" id="fruitInput" placeholder="Enter a fruit">
+            <button onclick="task12()">Run Task 12</button>
+        </div>
+        <div class="console" id="console12"></div>
+    </div>
+
+    <!-- Task 13 -->
+    <div class="task">
+        <h2>13. Break a Loop at 5</h2>
+        <p>Loop prints 0-9 but stops completely at 5</p>
+        <div class="input-group">
+            <input type="number" id="breakNumber" placeholder="Enter break number" min="0" max="9" value="5">
+            <button onclick="task13()">Run Task 13</button>
+        </div>
+        <div class="console" id="console13"></div>
+    </div>
+
+    <!-- Task 14 -->
+    <div class="task">
+        <h2>14. Find Variable Type</h2>
+        <p>Use typeof to find and print a variable's type</p>
+        <div class="input-group">
+            <input type="text" id="typeInput" placeholder="Enter any value">
+            <button onclick="task14()">Run Task 14</button>
+        </div>
+        <div class="console" id="console14"></div>
+    </div>
+
+    <!-- Task 15 -->
+    <div class="task">
+        <h2>15. Make Text Red</h2>
+        <p>Change paragraph text color to red on button click</p>
+        <p id="colorText">This text will turn red</p>
+        <button onclick="task15()">Change Color</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
