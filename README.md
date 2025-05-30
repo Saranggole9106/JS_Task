@@ -44,3 +44,25 @@ Fill in the blanks to test your JavaScript knowledge:
 19. A function can return a value using the `return` keyword.
 
 20. The `typeof` operator returns the __type__ of a variable.
+
+
+<h1 align="center">🧩 <strong>JavaScript Criss-Cross Puzzle</strong></h1>
+
+<p align="center">
+  <img src="![image](https://github.com/user-attachments/assets/1d26f370-ad3e-457e-881f-3530a9f3c601)
+" alt="JavaScript Criss-Cross Puzzle" width="500"/>
+</p>
+
+<p align="center">
+  This Criss-Cross puzzle is designed to reinforce your knowledge of key JavaScript concepts like variables, data types, loops, functions, events, and more.
+</p>
+
+- Variable declarations (`let`, `const`, `var`)
+- Data types like `Boolean`, `String`, `Array`, and `Object`
+- Looping structures (`for`, `while`)
+- Functions and their components (`function`, `return`, `parameter`)
+- Event handling and DOM interaction
+- Useful methods like `.push()`, `.pop()`, and `.length`
+- Operators like `typeof` and `===`
+
+🧠 **Challenge yourself!** Try solving the puzzle without referring to notes, then review key concepts afterward for better retention.
